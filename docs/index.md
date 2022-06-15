@@ -1,169 +1,176 @@
-<!DOCTYPE html>
-<html lang="en-us">
+/*
+ First External CSS Stylesheet
+ */
 
-<head>
+/* Styling for HTML elements */
 
-    <style>
-        img{ width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 100%;}
-    </style>
+body {
+    /* padding: 100px; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #d8c00e;
+    position:relative;
+  }
+  /* body .first_line{background: yellowgreen;
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    position:relative;
+    display:inline-block;
+    left:50px;
+  } */
 
-    <meta charset="UTF-8">
-    <title>index</title>
+  #first_line_color{background: yellowgreen;
 
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
- 
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    position:relative;
+    display:inline-block;
+    left:0px;
+  }
+
+  body .row1{background: yellowgreen;
+
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    position:relative;
+    display:inline-block;
+    left:0px;
+  }
+
+
+  .first_line >.div1 {
+    width: 170px;
+    height: 60px;
+    border: 1px solid blue;
+    background-color: rgb(46, 159, 163); 
+    position:relative;
+    display:inline-block;
+    left:50px;
+  }
+  /* .first_line>.first_line_blank>p{display:inline-block;} */
+  .first_line>.div1>h1{text-align: center; color:red}
+
+  /* .btn-group{position:absolute;
+    right:200px;
+    display:inline-block;} */
+
   
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  .form-inline>.dropdown{display:inline-block;position:absolute;right:32%;top:40%}
+  .form-inline>form>.MyButton1{position:absolute;right:15%;display:inline-block;}
+  .form-inline>form>.MyButton2{position:absolute;right:5%; display:inline-block;}
+  
+  
+    /* float:right} */
 
-     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  header {
+    background: blue;
+  }
+  
+  header>h1 {
+    padding: 0px ;
+    margin: 0px;
+    margin-bottom: 0px;
+    font-size: 48px;
+    /* color: #eee; */
+    color:yellowgreen;
+    text-align: left;
+  }
+  
+  /* h2 {
+    font-size: 24px;
+  } */
+  
+  a {
+    color: #d21034;
+  }
+  
+  .Col_container{
+    /* margin-left:30px;*/
+    margin:30px; 
+    background: rgb(160, 97, 97);
+  /* color:rgb(192, 146, 146); */
+  }
 
-<body>
-      <div id="first_line_color">
-        <div class="row">   
-                <!-- <div class="form-inline">   -->
-                <div class="col-md-6">    
+  
 
-                        <div class="first_line" >
-                            <div class="div1"><h1>Latitude</h1> </div>
-                        </div>    
-                </div>  
-                
-               <div class="col-md-2">     
-                    <!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-                        <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            plot
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
-                            <a class="dropdown-item" href="Humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="wind-speed.html">Wind-speed</a>
-                        </div>
-                        </div>
-                </div>  
+  /* Selecting elements by class */
+  .container1 {
+    /* width: 1000px;
+    height: 1000px; */
+    position:relative;
+    margin-top: 10px ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    padding: 5px;
+    background:green;
+  }
 
-                <div class="col-md-2">  
-                    <form>
-                       <input class="MyButton1" type="button" value="Comparison" onclick="window.location.href='comparison.html'" />       
-                    </form>
-                </div> 
+  .container2 {
+    /* width: 1000px;
+    height: 1000px; */
+    position:relative;
+    margin-top: 10px ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+    padding: 20px;
+    background: yellow;
+  }
+  
+  #main_figure{
+    /* width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-color: green;
+    border-width: 5px; */
+    /* position:absolute;
+    top:50px; */
+    /* left:50px;   */
+    float:left
+  }
+  
+  #introduction>p{color:black}
 
-                <div class="col-md-2">
-                      <form>
-                            <input class="MyButton2" type="button" value="data" onclick="window.location.href='weather_df.html'" />       
-                      </form>
-    <!-- <button type="button" href="data.html"> <a class="dropdown-item" href="https://www.youtube.com">Data</a> </button> --> 
-                </div>
-        </div>
-<!-- </div> -->
-     </div>
-<br>
+  #main_figure>h2{position:absolute;
+    right:0px;
+    top:0px;
+}
 
+.container>h2{position:relative;
+    right:500px;
+    top:0px;
+    color:yellow;
+    font-size:400
+}
 
-<div class="Col_container">
-    <!--Normally these medium columns go full wide on small screen sizes-->
-    <div class="row">
-      
-      
-      <div class="col-md-8">
-        <!-- <div class="box skyblue"> -->
+.container_data{padding: 10px ;
+  margin: 30px;
+background-color: white}
 
-          <main class="container1">
-            <header>
-                <h1>Summary: Lattitude vs. X</h1>
-            </header>
-                <section id="introduction">
-                    <figure id="main_figure">
-                      <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
-                      <img  id="main_fig" src="./Resources/latitude_Max-Temperature.png" alt="latitude_Max-Temperature" style="width:300px;height:300px;float:left">
-                    </figure>
-                <p> &nbsp &nbsp &nbsp &nbsp This project is to visualize a weather analysis results performed in a previous project <a href="https://github.com/yongjinjiang/Python-API"> Weather project</a>, in which we studied the current weather all over 
-            the world. We are supposed to choose more than 500 cities 
-            with random latitude and longitude coordinates. Query the
-             weather data from OpenWeatherMap API, make some plots
-              and draw some conclusions about the dependence of 
-              weather on the latitude value.</p>
-            
-                 <p> &nbsp &nbsp &nbsp &nbsp Here we presented the results in a web visualization dashboard. 
-                     This is a user-friendly way to access the results presented in <a href="https://github.com/yongjinjiang/Python-API"> Weather project</a>. For further technique detailes, please 
-                go back to  <a href="https://github.com/yongjinjiang/Python-API"> Weather project</a> where we have python codes(jupyter notebook version) to attain the 
-                corresponding data for today.
-            </p>
-        </section>
-      </main> 
+/* .container2>header>h2{position:relative;
+  right:500px;
+  top:0px;
+  color:red;
+  font-size:500
+} */
 
-      </div>
-      <!-- </div> -->
-      
-      
-      <div class="col-md-4">
-          
-                <main class="container2">
-                    <header>
-                        <h2>Visualizations</h2>
-                    </header>
-                <!--Normally these medium columns go full wide on small screen sizes-->
-                <div class="row">
-                  <div class="col-xs-3 col-sm-3 col-md-6">
-                      <figure id="main1_figure">
-                          <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
-                        <a href="./Temperature.html">
-                          <img src="./Resources/latitude_Max-Temperature.png" alt="latitude_Max-Temperature" style="width:150px;height:150px;">
-                        </a>
-                        </figure>
-            
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-6">
-                      <figure id="main1_figure">
-                          <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
-                          <a href="./cloudiness.html">
-                          <img   src="./Resources/latitude_Cloudiness(mph).png" alt="latitude_Cloudiness" style="width:150px;height:150px;">
-                          </a>
-                        </figure>
-                  </div>
-                <!-- </div> -->
+header>h2 {
+  padding: 0px ;
+  margin: 0px;
+  margin-bottom: 0px;
+  font-size: 28px;
+  color:whitesmoke;
+  text-align: center;
+}
 
-                <!-- <div class="row"> -->
-                    <div class="col-xs-3 col-sm-3 col-md-6">
-                        <figure id="main1_figure">
-                            <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
-                            <a href="./Humidity.html">
-                            <img   src="./Resources/latitude_humidity.png" alt="latitude_humidity" style="width:150px;height:150px;">
-                            </a>  
-                        </figure>
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-6">
-                        <figure id="main1_figure">
-                            <!-- <figcaption>latitude_Max-Temperature</figcaption> -->
-                            <a href="./wind-speed.html">
-                            <img  src="./Resources/latitude_wind-speed(mph).png" alt="latitude_wind-speed" style="width:150px;height:150px;">
-                            </a>  
-                        </figure>
-                    </div>
-                  </div>
-                  </main>
-           
-            
-      </div>
-    </div>
-
-        
-        
-        <br><br>
-<!-- <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name"> -->
-
-
- 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+figure figcaption {
+  border: whitesmoke;
+  text-align: center;
+  color:rgb(39, 228, 140);
+}
